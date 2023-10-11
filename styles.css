@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', sans-serif;
+    box-sizing: border-box;
+}
+
+.portfolio {
+    height: 100vh;
+    width: 100%;
+    background-color: #0C0404;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #fe2c54;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    padding-bottom: 5%;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.photo {
+    display: block; 
+    width: 35%; 
+    height: 43%;
+    margin: 10% 53% 2%; 
+}
+
+
+
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #191919;
+}
+
+.about img {
+    height: auto;
+    width: 24%; 
+    height: 30%;
+    margin-left: 20%;
+}
+
+.about-text {
+    flex: 1;    
+    margin-left: 4%;
+}
+
+.main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 18px; 
+    margin-bottom: 15px; 
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 24px; 
+    font-size: 16px;
+    margin-bottom: 30px; 
+}
+
+.instagram {
+    background-color: #fe2c54;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    transition: .4s;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.instagram:hover {
+    background-color: transparent;
+    border: 2px solid #fe2c54;
+    cursor: pointer;
+}
+
+.skills {
+    background: #101010;
+    padding: 100px 0;
+}
+
+.title h2 {
+    color: white;
+    font-size: 45px; 
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: auto;
+    width: 100%; 
+    padding: 20px; 
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: #fe2c54;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    transition: .4s;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #fe2c54;
+    cursor: pointer;
+}
+
+
+@media (min-width:541px) and (max-width: 767px) {
+    .content {
+        left: 4%;
+        margin-top: -28%;
+    }
+
+    .photo {
+        width: 70%;
+        height: 26%;
+        margin: 90% auto;
+    }
+
+    .about-text h2 {
+        font-size: 30px; 
+    }
+    .about-text h5 {
+        font-size: 16px; 
+        margin-bottom: 10px; 
+    }
+    .about-text p {
+        font-size: 14px; 
+        line-height: 20px; 
+        margin-bottom: 20px;
+    }
+    .about img {
+        height: 230px;
+        width: 180px;
+        margin-left: 15px
+    }
+    .title h2 {
+        font-size: 40px; 
+    }
+
+    .card {
+        padding: 15px; 
+    }
+
+    .card .button {
+        padding: 7px 18px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+    .photo {
+        margin: 60% auto;
+        width: 60%;
+        height:30%;
+    }
+    .content {
+        margin-top: -15%;
+        margin-left: 3%;
+    }
+}
+
+@media (min-width: 539px) and (max-width: 540px) {
+    .photo {
+        margin: 70% auto;
+        width: 60%;
+        height: 30%;
+    }
+    .content {
+        margin: -5% auto;
+    }
+}
+
+@media (max-width: 538px) {
+    .content h1 {
+        font-size: 33px;
+    }
+    .content h3 {
+        font-size: 14px;
+    }
+    .photo {
+        margin: 88% auto;
+        width: 67%;
+        height: 25%;
+    }
+    .content {
+        margin-top:-33%;
+    }
+    .about img {
+        margin-left: 5px;
+        height: 290px;
+        width: 215px;
+    }
+    .box {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (min-width:1021px) and (max-width: 1281px){
+    .photo {
+        margin: 25% auto;
+        width: 48%;
+    }
+    .content {
+        margin:-10% auto;
+    }
+}
